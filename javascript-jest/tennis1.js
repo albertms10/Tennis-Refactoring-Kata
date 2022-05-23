@@ -16,10 +16,6 @@ function unequalOrNonLateGameScore(m_score1, score, m_score2) {
     var tempScore = 0;
     var i = 1;
     if (i === 1) { tempScore = m_score1; }
-    else {
-        score += "-";
-        tempScore = m_score2;
-    }
     switch (tempScore) {
         case 0:
             score += "Love";
