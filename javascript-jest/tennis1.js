@@ -2,12 +2,12 @@
 
 function getScore(m_score1, m_score2) {
     var score = "";
-    var tempScore = 0;
     if (m_score1 === m_score2) {
         score = equalScore(m_score1);
     } else if (m_score1 >= 4 || m_score2 >= 4) {
         score = lateGameScore(m_score1, m_score2);
     } else {
+        var tempScore = 0;
         for (var i = 1; i < 3; i++) {
             if (i === 1) {tempScore = m_score1;}
             else {
