@@ -63,16 +63,9 @@ function lateGameScore(m_score1, m_score2) {
 }
 
 function equalScore(score) {
-    switch (score) {
-        case 0:
-            return "Love-All";
-        case 1:
-            return "Fifteen-All";
-        case 2:
-            return "Thirty-All";
-        default:
-            return "Deuce";
-    }
+    const equalScores = ["Love-All", "Fifteen-All", "Thirty-All"];
+
+    return equalScores[score] ?? "Deuce";
 }
 
 module.exports = getScore;
